@@ -65,6 +65,23 @@ Speed is expressed in milliseconds (**NOTE** this is a proposed change from t-co
 ```L050S100``` -> Half extension over 100 milliseconds
 
 
+## Parameter Commands
+
+Used for adjusting various parameters used by the pattern generator
+
+|Command|Usage|
+|-------|-----|
+|PMODE| 0 -> Linear direct moves only <br> 1 -> Pattern Generator |
+|PATTERN| 0-32767 <br> available patterns in controller to be auto-populated using D3 |
+|P[NUMBER][VALUE]| **[Number]**<br> Default Parameters listed below (0-2) with extended parameters extended by the selected pattern and should be read by using ```D2``` everytime the pattern is changed|
+
+
+**Default Parameters**
+```P0[Value]``` **Speed** of OSSM in current mode [Value] from 0-9999
+```P1[Value]``` **Length** of Stroke [Value] from 0-9999
+```P2[Value]``` **Depth** of Stroke [Value] from 0-9999
+
+
 ## Device Commands
 
  - ```D0``` Will return device & firmware version - "OSSM [Firmware]"
@@ -72,7 +89,7 @@ Speed is expressed in milliseconds (**NOTE** this is a proposed change from t-co
  - ```D1``` Will return tcode Version - "TC++ [Version]"
  - - *ex* ``` TC++ 0.001```
  -  ```D2``` Will return a list of axis available and their labels
- -  ```D3``` (OSSM Specific) Will return a list of Parameters [detailed below]
+ -  ```D3``` (OSSM Specific) Will return a list of Parameters based on the selected Pattern [detailed below]
  -  ```DSTOP``` Stops device (Motor freze, does not release motor)
 
 
