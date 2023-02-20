@@ -112,7 +112,7 @@ Calling ```D4``` will always reutrn the same parameters for 0-2, and then list a
 
 D4[Pattern] , [Parameter] L[Low Scale Value] H[High Scale Value] S[Home Value] [Friendly Name]
 
-*ex* for Pattern 0 "D40, Simple Stroke" - ``` 0 L0 H9999 S0 Speed, 1 L0 H9999 S0 Stroke Length, 2 L0 H9999 S9999 Depth ```
+*ex* for Pattern 0 "Simple Stroke" - ```D40, 0 L0 H9999 S0 Speed, 1 L0 H9999 S0 Stroke Length, 2 L0 H9999 S9999 Depth ```
 
 
 
