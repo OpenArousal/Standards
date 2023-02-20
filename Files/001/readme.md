@@ -92,8 +92,28 @@ Used for adjusting various parameters used by the pattern generator
  - ```D1``` Will return tcode Version - "TC++ [Version]"
  - - *ex* ``` TC++ 0.001```
  -  ```D2``` Will return a list of axis available and their labels
- -  ```D3``` (OSSM Specific) Will return a list of Parameters based on the selected Pattern [detailed below]
+ -  ```D3``` (OSSM Specific) Will return a list of Patterns available 
+ -  ```D4``` (OSSM Specific) Will return a list of Parameters based on the selected Pattern [detailed below]
  -  ```DSTOP``` Stops device (Motor freze, does not release motor)
+
+
+## D3 - Available Patterns
+
+Calling ```D3``` will reutrn a comma seperated list of patterns in the following format:
+
+[Pattern #][Friendly Name]
+
+*ex* ```0 Simple Stroke, 1 Double Scoop, 2 Shy Fuck```
+
+
+## D4 - Available Parameters
+
+Calling ```D4``` will always reutrn the same parameters for 0-2, and then list any additional available parameters
+
+[Parameter] L[Low Scale Value] H[High Scale Value] S[Home Value] [Friendly Name]
+
+*ex* for Pattern 0 "Simple Stroke" - ``` 0 L0 H9999 S0 Speed, 1 L0 H9999 S0 Stroke Length, 2 L0 H9999 S9999 Depth ```
+
 
 
 
