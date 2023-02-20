@@ -77,8 +77,11 @@ Used for adjusting various parameters used by the pattern generator
 
 
 **Default Parameters**
+
 ```P0[Value]``` **Speed** of OSSM in current mode [Value] from 0-9999
+
 ```P1[Value]``` **Length** of Stroke [Value] from 0-9999
+
 ```P2[Value]``` **Depth** of Stroke [Value] from 0-9999
 
 
