@@ -16,7 +16,7 @@ All values given are between 0 and .9999 [Minimum digits for a value are 1, maxi
 ### Live Control
 ``` L[Channel][Value] ```
 
-**Channel** is a value from 0 to 9
+**[Channel]** is a value from 0 to 9
 
 | Channel | Description |
 |---------|-------------|
@@ -31,7 +31,7 @@ All values given are between 0 and .9999 [Minimum digits for a value are 1, maxi
 
 
 
-**Value** is bewteen 0 and .9999
+**[Value]** is bewteen 0 and .9999
 
 **Toy Rail**
 
